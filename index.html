@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aman Shukla — Mechanical Engineer passionate about R&D in motorsport, aerospace, and advanced engineering systems. Portfolio showcasing design, simulation, and development projects.">
+    <meta name="keywords" content="Mechanical Engineer, F1, Aerospace, CFD, FEA, SolidWorks, ANSYS, Portfolio, R&D">
+    <meta name="author" content="Aman Shukla">
+    <title>Aman Shukla | Mechanical Engineer — Motorsport & Aerospace R&D</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏎️</text></svg>">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">A<span>.</span>Shukla</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#passion" class="nav-link">F1 &amp; Aero</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger" id="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Floating Equations -->
+        <div class="hero-equations">
+            <span class="hero-equation">∂u/∂t + (u·∇)u = −∇p/ρ + ν∇²u</span>
+            <span class="hero-equation">∇ · u = 0</span>
+            <span class="hero-equation">F = ½ρv²S·Cd</span>
+            <span class="hero-equation">L = ½ρv²S·Cl</span>
+            <span class="hero-equation">Re = ρvL/μ</span>
+            <span class="hero-equation">∂ρ/∂t + ∇·(ρu) = 0</span>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">Mechanical Engineering · R&amp;D</div>
+            <h1 class="hero-name">Aman Shukla</h1>
+            <p class="hero-title">
+                <span class="highlight">Motorsport</span> &amp; <span class="highlight">Aerospace</span> Enthusiast
+            </p>
+            <p class="hero-subtitle">
+                Design · Simulation · Development — Engineering the future of high-performance systems
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View Projects ↓</a>
+                <a href="#contact" class="btn-outline">Get in Touch</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">About</div>
+                <h2 class="section-title">Engineering Through First Principles</h2>
+                <p class="section-subtitle">Where computational tools meet experimental validation</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I am a <strong>Mechanical Engineering</strong> undergraduate driven by a passion for
+                        research and development in the fields of <strong>motorsport, aerospace</strong>, and
+                        advanced engineering systems. My interests lie at the intersection of engineering design,
+                        computational simulations, and applied physics — where innovative ideas are transformed into
+                        high-performance solutions.
+                    </p>
+                    <p>
+                        Through hands-on experience in go-kart engineering, aeromodelling, robotics, and CAD-based
+                        product development, I have built a strong foundation in engineering design and analysis.
+                        I actively explore <strong>CFD, FEA, numerical methods, and optimisation techniques</strong>
+                        to better understand and predict the behaviour of complex mechanical systems.
+                    </p>
+                    <p>
+                        My long-term goal is to contribute to cutting-edge R&D efforts that advance vehicle
+                        performance, propulsion systems, aerodynamics, and simulation technologies.
+                    </p>
+                    <div class="about-quote">
+                        "Solving challenging engineering problems through a combination of first-principles
+                        thinking, computational tools, and experimental validation."
+                    </div>
+                </div>
+
+                <div class="about-stats reveal reveal-delay-2">
+                    <div class="stat-card">
+                        <div class="stat-number">8.21</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2027</div>
+                        <div class="stat-label">Graduating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label">Tools Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Education</div>
+                <h2 class="section-title">Academic Foundation</h2>
+                <p class="section-subtitle">Building expertise through rigorous engineering coursework</p>
+            </div>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 — 2027 (Expected)</div>
+                        <h3>Bachelor of Technology in Mechanical Engineering</h3>
+                        <p class="timeline-company">Motilal Nehru National Institute of Technology (NIT Allahabad)</p>
+                        <div class="timeline-gpa">
+                            <span>⚡</span> CGPA: 8.21
+                        </div>
+                        <div class="timeline-coursework">
+                            <span class="coursework-tag">Fluid Mechanics</span>
+                            <span class="coursework-tag">Aerodynamics</span>
+                            <span class="coursework-tag">Finite Element Analysis</span>
+                            <span class="coursework-tag">Computational Fluid Dynamics</span>
+                            <span class="coursework-tag">Vehicle Dynamics</span>
+                            <span class="coursework-tag">Propulsion Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Experience</div>
+                <h2 class="section-title">Industry & Research</h2>
+                <p class="section-subtitle">Bridging academic knowledge with real-world engineering</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            June 2025 — July 2025
+                            <span class="timeline-badge">Completed</span>
+                        </div>
+                        <h3>Summer Internship</h3>
+                        <p class="timeline-company">TATA Motors</p>
+                        <ul class="timeline-details">
+                            <li>Analyzed five years of plant incident data to identify safety trends and proposed actionable recommendations to enhance overall plant safety and risk mitigation.</li>
+                            <li>Worked on analyzing and documenting propeller shaft fitment-related incidents to support process improvements and reduce assembly line failures.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal reveal-delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            May 2026 — June 2026
+                            <span class="timeline-badge upcoming">Upcoming</span>
+                        </div>
+                        <h3>Research Intern</h3>
+                        <p class="timeline-company">Solid State Physics Laboratory, DRDO</p>
+                        <ul class="timeline-details">
+                            <li>Research internship at India's premier defense research organization — details to be updated upon completion.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Skills</div>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Tools and technologies powering high-performance engineering</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- CAD / 3D Modeling -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">🔧</div>
+                    <h3 class="skill-category-title">CAD / 3D Modeling</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">SolidWorks</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Fusion 360</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AutoCAD</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulation & Analysis -->
+                <div class="skill-category reveal reveal-delay-1">
+                    <div class="skill-category-icon">🌊</div>
+                    <h3 class="skill-category-title">Simulation & Analysis</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">ANSYS</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OpenFOAM</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">COMSOL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category reveal reveal-delay-2">
+                    <div class="skill-category-icon">💻</div>
+                    <h3 class="skill-category-title">Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Simulink</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="82"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="skill-category reveal reveal-delay-3">
+                    <div class="skill-category-icon">⚙️</div>
+                    <h3 class="skill-category-title">Manufacturing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">3D Printing</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CNC Machining</span>
+                            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Projects</div>
+                <h2 class="section-title">Engineering Lab</h2>
+                <p class="section-subtitle">Design, simulate, code — each project a step towards innovation</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="project-tabs reveal">
+                <button class="tab-btn active" data-tab="all">All Projects</button>
+                <button class="tab-btn" data-tab="design">Design</button>
+                <button class="tab-btn" data-tab="simulation">Simulation</button>
+                <button class="tab-btn" data-tab="coding">Coding</button>
+            </div>
+
+            <!-- Project Cards (Placeholders) -->
+            <div class="project-grid">
+                <div class="project-card reveal" data-category="design">
+                    <div class="project-card-image">
+                        <span class="project-placeholder-icon">🏎️</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-tags">
+                            <span class="project-tag design">Design</span>
+                        </div>
+                        <h3>Project Coming Soon</h3>
+                        <p>A new design project is currently being documented. Check back for detailed CAD models, renders, and engineering analysis.</p>
+                        <div class="project-card-links">
+                            <span class="project-link">🔒 Details Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-1" data-category="simulation">
+                    <div class="project-card-image">
+                        <span class="project-placeholder-icon">🌊</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-tags">
+                            <span class="project-tag simulation">Simulation</span>
+                        </div>
+                        <h3>Project Coming Soon</h3>
+                        <p>CFD/FEA simulation results with detailed flow visualizations and structural analysis are being prepared for showcase.</p>
+                        <div class="project-card-links">
+                            <span class="project-link">🔒 Details Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2" data-category="coding">
+                    <div class="project-card-image">
+                        <span class="project-placeholder-icon">💻</span>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-tags">
+                            <span class="project-tag coding">Coding</span>
+                        </div>
+                        <h3>Project Coming Soon</h3>
+                        <p>Computational engineering project with MATLAB/Python scripts, numerical methods, and optimization algorithms — coming soon.</p>
+                        <div class="project-card-links">
+                            <span class="project-link">🔒 Details Soon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta reveal">
+                <p style="color: var(--text-tertiary); font-size: 0.85rem; font-family: var(--font-mono);">
+                    // More projects loading... Stay tuned for detailed case studies
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== F1 & AEROSPACE PASSION ===== -->
+    <section id="passion" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">F1 &amp; Aerospace</div>
+                <h2 class="section-title">Where Passion Meets Physics</h2>
+                <p class="section-subtitle">The domains that fuel the drive to engineer beyond limits</p>
+            </div>
+
+            <div class="passion-grid">
+                <div class="passion-card reveal">
+                    <div class="passion-icon">🌬️</div>
+                    <h3>External Aerodynamics</h3>
+                    <p>Studying airflow behavior around vehicle bodies to optimize downforce, reduce drag, and engineer aerodynamic efficiency at every velocity.</p>
+                </div>
+
+                <div class="passion-card reveal reveal-delay-1">
+                    <div class="passion-icon">🔩</div>
+                    <h3>Active Suspension Systems</h3>
+                    <p>Exploring electronically controlled damping systems that dynamically adjust ride height and stiffness for optimal tyre contact and handling.</p>
+                </div>
+
+                <div class="passion-card reveal reveal-delay-2">
+                    <div class="passion-icon">⚡</div>
+                    <h3>Hybrid Powertrains</h3>
+                    <p>Investigating the integration of MGU-K and MGU-H systems in F1 to achieve maximum energy recovery and thermal efficiency in modern power units.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOBBIES SECTION ===== -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Off the Grid</div>
+                <h2 class="section-title">Beyond Engineering</h2>
+                <p class="section-subtitle">Click to discover the interests that keep the creative gears turning</p>
+            </div>
+
+            <div class="hobbies-grid reveal">
+                <div class="hobby-item" data-hobby="photography" data-title="Photography" data-desc="Capturing moments through the lens — finding compositions and stories in everyday scenes that most people walk past.">
+                    <span class="hobby-icon">📷</span>
+                    <span class="hobby-label">Photo</span>
+                </div>
+                <div class="hobby-item" data-hobby="football" data-title="Football" data-desc="The beautiful game — whether it's playing on the field or analyzing match tactics, football brings the perfect mix of strategy and raw energy.">
+                    <span class="hobby-icon">⚽</span>
+                    <span class="hobby-label">Football</span>
+                </div>
+                <div class="hobby-item" data-hobby="badminton" data-title="Badminton" data-desc="Fast reflexes, precision shots, and competitive spirit — badminton sharpens focus and agility both on and off the court.">
+                    <span class="hobby-icon">🏸</span>
+                    <span class="hobby-label">Badminton</span>
+                </div>
+                <div class="hobby-item" data-hobby="guitar" data-title="Guitar" data-desc="From acoustic melodies to electric riffs — playing guitar is the creative outlet that balances the analytical mind of an engineer.">
+                    <span class="hobby-icon">🎸</span>
+                    <span class="hobby-label">Guitar</span>
+                </div>
+                <div class="hobby-item" data-hobby="reading" data-title="Reading" data-desc="Diving into technical papers, engineering biographies, and thought-provoking fiction — reading fuels curiosity and broadens perspective.">
+                    <span class="hobby-icon">📚</span>
+                    <span class="hobby-label">Reading</span>
+                </div>
+                <div class="hobby-item" data-hobby="cooking" data-title="Cooking" data-desc="Engineering meets the kitchen — experimenting with recipes, perfecting processes, and creating flavors is just another form of design iteration.">
+                    <span class="hobby-icon">🍳</span>
+                    <span class="hobby-label">Cooking</span>
+                </div>
+                <div class="hobby-item" data-hobby="dance" data-title="Dance" data-desc="Expressing rhythm and energy through movement — dance is a counterbalance to the technical world, keeping the creative spark alive.">
+                    <span class="hobby-icon">💃</span>
+                    <span class="hobby-label">Dance</span>
+                </div>
+                <div class="hobby-item" data-hobby="music" data-title="Music" data-desc="From composing to listening — music is the universal language that inspires, relaxes, and drives creativity in every engineering challenge.">
+                    <span class="hobby-icon">🎵</span>
+                    <span class="hobby-label">Music</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Pop-out Overlay -->
+    <div class="hobbies-overlay" id="hobbies-overlay">
+        <div class="hobbies-overlay-content">
+            <button class="hobbies-close" id="hobbies-close">✕</button>
+            <div class="hobbies-overlay-icon" id="overlay-icon"></div>
+            <h3 id="overlay-title"></h3>
+            <p id="overlay-desc"></p>
+        </div>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">Contact</div>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open to opportunities, collaborations, and engineering discussions</p>
+            </div>
+
+            <div class="contact-grid reveal">
+                <div class="contact-card">
+                    <div class="contact-card-icon">📧</div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:shukaman1535@gmail.com">shukaman1535@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Lucknow, India</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">🎓</div>
+                    <h3>University</h3>
+                    <p>NIT Allahabad</p>
+                </div>
+            </div>
+
+            <div class="contact-socials reveal reveal-delay-1">
+                <a href="https://linkedin.com/" target="_blank" class="social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+                    in
+                </a>
+                <a href="https://github.com/" target="_blank" class="social-link" title="GitHub" aria-label="GitHub Profile">
+                    ⌨
+                </a>
+                <a href="mailto:shukaman1535@gmail.com" class="social-link" title="Email" aria-label="Send Email">
+                    ✉
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-equation">
+                    ∂ρ/∂t + ∇·(ρu) = 0 &nbsp;|&nbsp; ρ(∂u/∂t + u·∇u) = −∇p + μ∇²u + ρg &nbsp;|&nbsp; ∂(ρE)/∂t + ∇·(u(ρE + p)) = ∇·(k∇T) + Φ
+                </div>
+                <p class="footer-name">Aman <span>Shukla</span></p>
+                <p class="footer-copy">© 2025 — Engineered with precision, built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
