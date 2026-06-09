@@ -30,18 +30,11 @@ function createFlowCurves() {
 
     const curveConfigs = [
         // [yOffset, zOffset, amplitude, opacity, phase]
-        [-2.0, -0.5, 0.6, 0.55, 0.0],
-        [-1.3,  0.3, 0.8, 0.70, 0.8],
-        [-0.7, -0.4, 0.5, 0.45, 1.5],
-        [-0.2,  0.6, 0.9, 0.85, 2.2],
-        [ 0.3, -0.2, 0.7, 0.65, 3.0],
-        [ 0.9,  0.4, 0.6, 0.50, 3.8],
-        [ 1.5, -0.8, 0.5, 0.40, 4.5],
-        [ 1.8,  0.1, 0.8, 0.75, 5.2],
-        [ 2.3, -0.3, 0.4, 0.35, 6.0],
-        [-2.5,  0.5, 0.7, 0.45, 0.5],
-        [ 0.0, -1.0, 0.6, 0.40, 2.8],
-        [ 2.8,  0.8, 0.5, 0.35, 4.0],
+        [-2.0, -0.5, 0.6, 0.30, 0.0],
+        [-0.8,  0.3, 0.8, 0.45, 0.8],
+        [ 0.4, -0.4, 0.6, 0.35, 1.8],
+        [ 1.6,  0.4, 0.7, 0.45, 3.5],
+        [ 2.5, -0.8, 0.5, 0.25, 4.5],
     ];
 
     curveConfigs.forEach(([yOff, zOff, amp, opacity, phase]) => {
@@ -166,7 +159,7 @@ const glowTexture = createGlowTexture();
 
 // ===== ATMOSPHERIC PARTICLES =====
 
-const PARTICLE_COUNT = 500;
+const PARTICLE_COUNT = 250;
 const particlePositions = new Float32Array(PARTICLE_COUNT * 3);
 const particleVelocities = [];
 
@@ -190,7 +183,7 @@ const particles = new THREE.Points(particleGeo, new THREE.PointsMaterial({
     color: 0xff5500,
     size: 0.08,
     transparent: true,
-    opacity: 0.6,
+    opacity: 0.35,
     sizeAttenuation: true,
     depthWrite: false,
     map: glowTexture,
@@ -200,7 +193,7 @@ scene.add(particles);
 
 // ===== SPEED TRAILS =====
 
-const TRAIL_COUNT = 60;
+const TRAIL_COUNT = 25;
 const trailPositions = new Float32Array(TRAIL_COUNT * 6);
 const trailColors = new Float32Array(TRAIL_COUNT * 6);
 const trailMeta = [];
@@ -234,7 +227,7 @@ const trailGeo = new THREE.BufferGeometry();
 trailGeo.setAttribute('position', new THREE.BufferAttribute(trailPositions, 3));
 trailGeo.setAttribute('color', new THREE.BufferAttribute(trailColors, 3));
 const speedTrails = new THREE.LineSegments(trailGeo, new THREE.LineBasicMaterial({
-    vertexColors: true, transparent: true, opacity: 0.85, depthWrite: false,
+    vertexColors: true, transparent: true, opacity: 0.45, depthWrite: false,
 }));
 scene.add(speedTrails);
 
