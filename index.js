@@ -463,3 +463,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
+const resumeBtn = document.getElementById('resume-btn');
+const resumeModal = document.getElementById('resume-modal');
+const resumeClose = document.getElementById('resume-close');
+
+resumeBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  resumeModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+resumeClose.addEventListener('click', () => {
+  resumeModal.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+resumeModal.addEventListener('click', (e) => {
+  if (e.target === resumeModal) {
+    resumeModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
