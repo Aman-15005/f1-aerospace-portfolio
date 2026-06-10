@@ -1580,3 +1580,102 @@ img {
 .btn-download:hover {
   background: #e05e00;
 }
+.resume-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.resume-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.resume-modal-content {
+  width: 90%;
+  max-width: 860px;
+  height: 90vh;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 60px rgba(255, 107, 0, 0.12);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.resume-modal-overlay.active .resume-modal-content {
+  transform: translateY(0);
+}
+
+.resume-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0e0e0e;
+}
+
+.resume-modal-title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.resume-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.resume-download-btn {
+  padding: 8px 18px;
+  background: var(--accent, #ff6b00);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.resume-download-btn:hover {
+  background: #e05e00;
+}
+
+.resume-close-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.resume-close-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.resume-modal-body {
+  flex: 1;
+  overflow: hidden;
+}
+
+.resume-modal-body iframe {
+  border: none;
+  display: block;
+}
